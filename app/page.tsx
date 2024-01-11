@@ -1,17 +1,26 @@
-import Image from 'next/image'
+"use client";
+import styles from './page.module.scss'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
-  return (
-    <html>
-      <head>
-    <style></style>
-      </head>
-      <body>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-       app home page
-    </main>
-      </body>
-    </html>
-    
-  )
+  const router = useRouter();
+  useEffect(() => {
+    router.push('/home1')
+  }, [])
+
+  return null
+
+  // return (
+  //   <html>
+  //     <head>
+  //     </head>
+  //     <body>
+  //       <main className={styles.page}>
+  //         app home page
+  //       </main>
+  //     </body>
+  //   </html>
+
+  // )
 }

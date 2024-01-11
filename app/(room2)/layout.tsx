@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-
+import styles from './layout.module.scss'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -15,12 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-       <head>
-        <meta http-equiv="X-UA-Compatible" content="room" />
+      <head>
+        <meta httpEquiv="X-UA-Compatible" content="room1" />
       </head>
-      <body className={inter.className}>
-        <div style={{background: 'green'}}>room layout header</div>
-        {children}</body>
+      <body className={styles.room2Layout}>
+        {children}
+        <div className={styles.room2Header}>Copy right thanks jyjin @2000-2024</div>
+      </body>
     </html>
   )
 }

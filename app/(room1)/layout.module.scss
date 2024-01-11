@@ -1,0 +1,32 @@
+.room1Layout{
+  padding: 0;
+  margin: 0;
+}
+
+.room1Header{
+  padding: 16px;
+  background-color: yellow;
+  color: black;
+}
+
+.main{
+  display: flex;
+}
+
+.menu{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #f0f0f0;
+
+  .menuItem{
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px 16px;
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}
